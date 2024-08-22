@@ -55,6 +55,9 @@ func run(cfg conf, log *slog.Logger) error {
 	return http.ListenAndServe(addr, mux)
 }
 
+// loadCachePlugin loads a cache implementation from a shared object (.so) file at the specified path.
+// It calls the constructor function by name, passing the necessary dependencies, and returns the initialized cache.
+// If path is empty, it returns the NopCache implementation.
 func loadCachePlugin(log *slog.Logger, path, name string) (cache.Cache, error) {
 	if path == "" {
 		log.Info("no cache plugin configured; using nop cache")
