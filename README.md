@@ -2,7 +2,8 @@
 
 A demo for Go Plugin.
 
-- [Blog](https://www.josestg.com/posts/golang/how-to-build-a-pluggable-library-in-go/)
+- https://www.josestg.com/posts/golang/how-to-build-a-pluggable-library-in-go
+- https://medium.com/@josestg/how-to-build-a-pluggable-library-in-go-d57411eacfc8
 
 ## Build
 
