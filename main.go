@@ -26,7 +26,7 @@ func main() {
 	flag.IntVar(&cfg.Port, "port", 8080, "port to listen on")
 	flag.TextVar(&cfg.LogLevel, "log-level", slog.LevelInfo, "log level")
 	flag.StringVar(&cfg.CachePluginPath, "cache-plugin-path", "", "path to the cache plugin")
-	flag.StringVar(&cfg.CachePluginFactoryName, "cache-plugin-factory-name", "NewCache", "name of the factory function in the cache plugin")
+	flag.StringVar(&cfg.CachePluginFactoryName, "cache-plugin-factory-name", "Factory", "name of the factory function in the cache plugin")
 	flag.DurationVar(&cfg.CacheExpiration, "cache-expiration", 15*time.Second, "duration that a cache entry will be valid for")
 	flag.Parse()
 
